@@ -11,24 +11,32 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     color: #717171;
 }
-.section{
+
+.section {
     padding: 75px 0;
 }
-.title{
+
+.title {
     color: #ec7532;
     font-size: 1.125rem;
     border-bottom: 1px solid #d8d8d8;
     letter-spacing: 1.7px;
     text-transform: uppercase;
 }
-.title::after{
+
+.title::after {
     content: '';
-    background: linear-gradient(to right,#fbbd61, #ec7532);
+    background: linear-gradient(to right, #fbbd61, #ec7532);
     width: 125px;
     height: 4px;
     display: block;
     margin-top: 20px;
 }
+.title_white{
+    color: white;
+    border-bottom: 1px solid #333;
+}
+
 /* line style */
 
 .line::after {
@@ -56,14 +64,15 @@ body {
 
 
 /* HEADER */
-header{
+
+header {
     position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
-    
 }
+
 header p {
     font-size: 14px;
     font-weight: 700;
@@ -80,7 +89,7 @@ header p {
     padding: 20px 24px;
 }
 
-#headerFixed{
+#headerFixed {
     background-color: black;
     position: fixed;
     top: 0;
@@ -88,6 +97,7 @@ header p {
     transform: translate(-50%, -100%);
     transition: transform .5s;
 }
+
 
 /* CAROUSEL */
 
@@ -116,9 +126,11 @@ header p {
     letter-spacing: 3px;
     margin-bottom: 10px;
 }
-.movieCarousel_trailer{
+
+.movieCarousel_trailer {
     animation-delay: 0.5s;
 }
+
 .movieCarousel_trailer>span {
     width: 48px;
     height: 48px;
@@ -142,7 +154,8 @@ header p {
     position: relative;
     overflow: hidden;
 }
-.movieCarousel_trailer button::before{
+
+.movieCarousel_trailer button::before {
     content: '';
     width: 110%;
     height: 100%;
@@ -155,27 +168,31 @@ header p {
     transform: skewX(30deg) translateX(-110%);
     transition: all .5s;
 }
-.movieCarousel_trailer button:hover::before{
+
+.movieCarousel_trailer button:hover::before {
     transform: skewX(30deg) translateX(-5px);
 }
-.movieCarousel_trailer button:hover{
+
+.movieCarousel_trailer button:hover {
     color: white;
 }
-.movieCarousel_trailer button span{
+
+.movieCarousel_trailer button span {
     position: relative;
     z-index: 2;
 }
-.movieCarousel .carousel-indicators{
+
+.movieCarousel .carousel-indicators {
     justify-content: start;
     left: 50%;
     transform: translateX(-50%);
     margin-right: 0;
     margin-left: 0;
-   
-   padding-left: 10px;
+    padding-left: 10px;
     bottom: 10%;
 }
-.movieCarousel .carousel-indicators button{
+
+.movieCarousel .carousel-indicators button {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -184,49 +201,59 @@ header p {
     opacity: 1;
     box-sizing: border-box;
 }
-.movieCarousel .carousel-indicators button.active{
+
+.movieCarousel .carousel-indicators button.active {
     background-color: white;
 }
-.movieCarousel_overlay{
+
+.movieCarousel_overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top,black,transparent);
+    background: linear-gradient(to top, black, transparent);
 }
 
+
 /* NEW IN  */
-.newIn_title{
+
+.newIn_title {
     text-align: center;
 }
-.newIn_title h3{
+
+.newIn_title h3 {
     font-size: 18px;
     color: #4a4a4a;
     margin: 1rem 0;
 }
-.newIn_title i{
+
+.newIn_title i {
     color: #fbbd61;
 }
-.newIn_img{
+
+.newIn_img {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
 }
-.newIn_overlay{
+
+.newIn_overlay {
     width: 200%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    background: linear-gradient(to bottom,#fbbd61, #ec7532 );
+    background: linear-gradient(to bottom, #fbbd61, #ec7532);
     transform: skewX(30deg) translateX(-150%);
     transition: all .5s;
 }
-.newIn_img:hover .newIn_overlay{
+
+.newIn_img:hover .newIn_overlay {
     transform: skewX(30deg) translateX(-30%);
 }
-.newIn_play{
+
+.newIn_play {
     position: absolute;
     top: 0;
     left: 0;
@@ -239,7 +266,8 @@ header p {
     opacity: 0;
     transition: all .5s;
 }
-.newIn_play i{
+
+.newIn_play i {
     width: 80px;
     height: 80px;
     border: 2px solid white;
@@ -249,7 +277,8 @@ header p {
     transform: scale(1);
     transition: .5s;
 }
-.newIn_play a{
+
+.newIn_play a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -258,13 +287,155 @@ header p {
     display: block;
     margin: 1rem 0;
 }
-.newIn_play p{
+
+.newIn_play p {
     color: white;
 }
-.newIn_img:hover .newIn_play{
+
+.newIn_img:hover .newIn_play {
     opacity: 1;
 }
-.newIn_play i:hover{
+
+.newIn_play i:hover {
     transform: scale(0.9);
 }
 
+
+/*SHOW TIMES */
+
+.showTime .nav-tabs .nav-item.show.nav-link,
+.nav-tabs.nav-link.active {
+    border: none;
+}
+
+.showTime .nav-tabs .nav-link {
+    border: none;
+    padding: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #4a4a4a;
+}
+
+.showTime .nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+
+.showTime .nav-tabs .nav-link span {
+    padding: 15px 30px;
+    display: block;
+}
+
+.showTime .nav-tabs .nav-link.active {
+    color: #ec7532;
+}
+
+.showTime_row img {
+    border-radius: 10px;
+}
+
+.showTime_row div p:first-of-type{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #ec7532;
+    margin-bottom: 0;
+}
+.showTime_row h3{
+    font-size: 24px;
+    font-weight: 300;
+    color: #010101;
+    letter-spacing: 1px;
+}
+.showTime_row a{
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #ec7532;
+    text-decoration: none;
+    transition: .5s;
+}
+.showTime_row a:hover{
+    color: #010101;
+
+}
+.showTime_time{
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    color: #4a4a4a;
+}
+.showTime_time button{
+    font-size: 14px;
+    letter-spacing: 2px;
+    color: #717171;
+    background-color: #d8d8d8;
+}
+.showTime_mins span:last-child{
+    width: 33px;
+    height: 33px;
+    display: inline-block;
+    color: white;
+    background-color: #4a4a4a;
+    text-align: center;
+    line-height: 33px;
+    border-radius: 50%;
+    font-weight: 700;
+
+}
+.showTime_row{
+    border-bottom: 1px solid #d8d8d8;
+}
+#myTabContent .tab-pane .showTime_row:last-child{
+    border-bottom: none;
+}
+
+/* COMING SOON */
+.comingSoon{
+    background: #010101 url(../img/slide-3.png);
+    background-size: cover;
+    color: white;
+}
+.comingSoon_type{
+    font-size: 14px;
+    color: #ec7532;
+    letter-spacing: 2px;
+}
+.comingSoon h3{
+    font-size: 34px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.comingSoon_rating > i{
+    color: #fbbd61;
+}
+.comingSoon p{
+    margin: 1rem 0;
+}
+.comingSoon a{
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #ec7532;
+    text-decoration: none;
+    transition: .5s;
+}
+.comingSoon a:hover{
+    color: white;
+
+}
+.comingSoon_video{
+    position: relative;
+}
+.comingSoon_video i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    border: 1px solid #ec7532;
+    border-radius: 50%;
+    font-size: 25px;
+    transition: .5s;
+}
+.comingSoon_video:hover i{
+    transform: translate(-50%,-50%) scale(0.9);
+}
