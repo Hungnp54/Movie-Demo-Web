@@ -7,17 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Cyber</title>
     <!-- BS5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Font awsome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- font GG -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300;1,700&display=swap"
+        rel="stylesheet">
     <!-- Animation CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <!-- Venobox CSS -->
+    <link rel="stylesheet" href="./css/venobox.min.css">
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/style.css">
 
@@ -25,22 +29,23 @@
 
 <body>
     <!-- HEADER -->
-    <header class="container">
+    <header class="container-md">
         <p class="text-end text-white mb-0">
             <i class="fas fa-phone-alt"></i>
             <span class="mx-3 border-end pe-2">096.108.1040</span>
             <i class="fa fa-search"></i>
         </p>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-md px-0">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img src="./img/logo.svg" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#movieNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <!-- <i class="fa fa-bars"></i> -->
-                </span>
-              </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#movieNavBar"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </button>
                 <div class="collapse navbar-collapse" id="movieNavBar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item active line">
@@ -73,11 +78,12 @@
                 <a class="navbar-brand" href="#">
                     <img src="./img/logo.svg" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#movieNavBar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">
-                  <!-- <i class="fa fa-bars"></i> -->
-              </span>
-            </button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#movieNavBar"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                         <i class="fa fa-bars"></i> 
+                    </span>
+                </button>
                 <div class="collapse navbar-collapse" id="movieNavBar">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item active line">
@@ -106,65 +112,71 @@
     <section class="movieCarousel">
         <div id="carouselMovie" class="carousel slide" data-bs-ride="carousel">
             <div class="container carousel-indicators">
-                <button type="button" data-bs-target="#carouselMovie" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselMovie" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselMovie" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselMovie" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselMovie" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselMovie" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/hero-1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item bg1 active">
+                    <!-- <img src="./img/hero-1.jpg" class="d-block w-100" alt="..."> -->
                     <div class="movieCarousel_overlay"></div>
-                    <div class="container carousel-caption d-none d-md-block">
-                        <div class="col-9">
+                    <div class="container carousel-caption">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 px-0">
                             <p class="animate__animated animate__fadeInDown">ACTION, ADVANTURE, FANTASY</p>
                             <h2 class="animate__animated animate__fadeInDown">End of The World: Part I</h2>
-                            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt obcaecati, aut voluptatibus laboriosam quam aliquid.</p>
+                            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Nesciunt obcaecati, aut voluptatibus laboriosam quam aliquid.</p>
                             <div class="animate__animated animate__fadeInUp movieCarousel_trailer">
                                 <span>PG</span>
                                 <button class="btn">
-                    <span>
-                      <i class="fa fa-play">PLAY TRAILER</i>
-                    </span>
-                    
-                  </button>
+                                    <span>
+                                        <i class="fa fa-play">PLAY TRAILER</i>
+                                    </span>
+
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./img/hero-2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item bg2">
+                    <!-- <img src="./img/hero-2.jpg" class="d-block w-100" alt="..."> -->
                     <div class="movieCarousel_overlay"></div>
-                    <div class="container carousel-caption d-none d-md-block">
-                        <div class="col-9">
+                    <div class="container carousel-caption">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 px-0">
                             <p class="animate__animated animate__fadeInDown">ACTION, ADVANTURE, FANTASY</p>
                             <h2 class="animate__animated animate__fadeInDown">End of The World: Part II</h2>
-                            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt obcaecati, aut voluptatibus laboriosam quam aliquid.</p>
+                            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Nesciunt obcaecati, aut voluptatibus laboriosam quam aliquid.</p>
                             <div class="animate__animated animate__fadeInUp movieCarousel_trailer">
                                 <span>PG</span>
                                 <button class="btn">
-                    <span>
-                      <i class="fa fa-play">PLAY TRAILER</i>
-                    </span>
-                  </button>
+                                    <span>
+                                        <i class="fa fa-play">PLAY TRAILER</i>
+                                    </span>
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./img/hero-3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item bg3">
+                    <!-- <img src="./img/hero-3.jpg" class="d-block w-100" alt="..."> -->
                     <div class="movieCarousel_overlay"></div>
-                    <div class="container carousel-caption d-none d-md-block">
-                        <div class="col-9">
+                    <div class="container carousel-caption">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 px-0">
                             <p class="animate__animated animate__fadeInDown">ACTION, ADVANTURE, FANTASY</p>
                             <h2 class="animate__animated animate__fadeInDown">End of The World: Part III</h2>
-                            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt obcaecati, aut voluptatibus laboriosam quam aliquid.</p>
+                            <p class="animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet consectetur,
+                                adipisicing elit. Nesciunt obcaecati, aut voluptatibus laboriosam quam aliquid.</p>
                             <div class="animate__animated animate__fadeInUp movieCarousel_trailer">
                                 <span>PG</span>
                                 <button class="btn">
-                    <span>
-                      <i class="fa fa-play">PLAY TRAILER</i>
-                    </span>
-                  </button>
+                                    <span>
+                                        <i class="fa fa-play">PLAY TRAILER</i>
+                                    </span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -282,25 +294,32 @@
         <div class="container">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link line active" id="mon-tab" data-bs-toggle="tab" data-bs-target="#mon" type="button" role="tab" aria-controls="mon" aria-selected="true"><span>MON</span></button>
+                    <button class="nav-link line active" id="mon-tab" data-bs-toggle="tab" data-bs-target="#mon"
+                        type="button" role="tab" aria-controls="mon" aria-selected="true"><span>MON</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link line" id="tue-tab" data-bs-toggle="tab" data-bs-target="#tue" type="button" role="tab" aria-controls="tue" aria-selected="false"><span>TUE</span></button>
+                    <button class="nav-link line" id="tue-tab" data-bs-toggle="tab" data-bs-target="#tue" type="button"
+                        role="tab" aria-controls="tue" aria-selected="false"><span>TUE</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link line" id="wed-tab" data-bs-toggle="tab" data-bs-target="#wed" type="button" role="tab" aria-controls="wed" aria-selected="false"><span>WED</span></button>
+                    <button class="nav-link line" id="wed-tab" data-bs-toggle="tab" data-bs-target="#wed" type="button"
+                        role="tab" aria-controls="wed" aria-selected="false"><span>WED</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link line" id="thu-tab" data-bs-toggle="tab" data-bs-target="#thu" type="button" role="tab" aria-controls="thu" aria-selected="false"><span>THU</span></button>
+                    <button class="nav-link line" id="thu-tab" data-bs-toggle="tab" data-bs-target="#thu" type="button"
+                        role="tab" aria-controls="thu" aria-selected="false"><span>THU</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link line" id="fri-tab" data-bs-toggle="tab" data-bs-target="#fri" type="button" role="tab" aria-controls="fri" aria-selected="false"><span>FRI</span></button>
+                    <button class="nav-link line" id="fri-tab" data-bs-toggle="tab" data-bs-target="#fri" type="button"
+                        role="tab" aria-controls="fri" aria-selected="false"><span>FRI</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link line" id="sat-tab" data-bs-toggle="tab" data-bs-target="#sat" type="button" role="tab" aria-controls="sat" aria-selected="false"><span>SAT</span></button>
+                    <button class="nav-link line" id="sat-tab" data-bs-toggle="tab" data-bs-target="#sat" type="button"
+                        role="tab" aria-controls="sat" aria-selected="false"><span>SAT</span></button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link line" id="sun-tab" data-bs-toggle="tab" data-bs-target="#sun" type="button" role="tab" aria-controls="sun" aria-selected="false"><span>SUN</span></button>
+                    <button class="nav-link line" id="sun-tab" data-bs-toggle="tab" data-bs-target="#sun" type="button"
+                        role="tab" aria-controls="sun" aria-selected="false"><span>SUN</span></button>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -454,19 +473,116 @@
                             30 September 2020
                         </span>
                     </div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam, aut facere voluptatibus repellat rerum.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam laboriosam, aut facere
+                        voluptatibus repellat rerum.</p>
                     <a href="#">MORE INFO <i class="fa fa-angle-right"></i></a>
                 </div>
                 <div class="col-6">
-                    <div class="comingSoon_video">
-                        <img class="img-fluid" src="./img/slide-3-video.png" alt="">
-                        <i class="fa fa-play"></i>
-                    </div>
+                    <a class="venobox" data-autoplay="true" data-vbtype="video" href="https://youtu.be/96TelFMZwHc">
+                        <div class="comingSoon_video">
+                            <img class="img-fluid" src="./img/slide-3-video.png" alt="">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </a>
+
                 </div>
             </div>
         </div>
 
     </section>
+    <!-- Movie List -->
+    <section class="movieList section">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="movieList_item">
+                        <img class="img-fluid" src="./img/movie-9.jpg" alt="">
+                        <div class="movieList_overlay"></div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movieList_item">
+                        <img class="img-fluid" src="./img/movie-8.jpg" alt="">
+                        <div class="movieList_overlay"></div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movieList_item">
+                        <img class="img-fluid" src="./img/movie-11.jpg" alt="">
+                        <div class="movieList_overlay"></div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movieList_item">
+                        <img class="img-fluid" src="./img/movie-12.jpg" alt="">
+                        <div class="movieList_overlay"></div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movieList_item">
+                        <img class="img-fluid" src="./img/movie-13.jpg" alt="">
+                        <div class="movieList_overlay"></div>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="movieList_item">
+                        <img class="img-fluid" src="./img/movie-14.jpg" alt="">
+                        <div class="movieList_overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact section">
+        <div class="contact_content">
+            <p>Need help, Contact our support team on</p>
+            <p><a href="tel:017647699651">017 647 699 651</a></p>
+        </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="row section">
+                <div class="col-3">
+                    <h3>Get In Touch</h3>
+                    <ul>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Give us Feedback</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>About Movie Star</h3>
+                    <ul>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Find us</a></li>
+                        <li><a href="#">Schedule</a></li>
+                        <li><a href="#">News</a></li>
+                    </ul> 
+                </div>
+                <div class="col-3">
+                    <h3>Legal Stuff</h3>
+                    <ul>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">Cookie policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h3>Connect with us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-google-plus-g"></i> Google +</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_copyright">
+                <p> ©2020 Movie Star. All Rights Reserved | Design by Phi Hung Nguyen</p>
+            </div>
+        </div>
+    </footer>
 
 
 
@@ -497,12 +613,23 @@
     <!-- Thu vien ho tro jquery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Jquery waypoints -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js" integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+        integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- bundle cua bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- VENOBOX JS -->
+    <script src="./js/venobox.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.venobox').venobox();
+        });
+    </script>
     <!-- MAIN JS -->
     <script>
-        window.onscroll = function() {
+        window.onscroll = function () {
             //code tao hieu ung xuat hien thanh mau den khi sroll
             if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
                 document.getElementById("headerFixed").style.transform = "translate(-50%,0)";
